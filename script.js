@@ -1,92 +1,56 @@
-// DIVIDING NUMBERS
-var quotient = 80 / 5;
-console.log(quotient);
+//DECLARING STRING VARIABLES
+var firstName = "Alan ";
+var lastName = "Turing";
+
+console.log(firstName + lastName)
 
 
-//INCREMENTING NUMBERS
-var myVar = 45;
-myVar++
-console.log(myVar);
+//ESCPAING LITERAL QUOTES IN STRINGS
+var myStr = "I am a \"double quoted\" string variable inside \"double quotes\"";
+console.log(myStr);
 
 
-//DECREMENTING NUMBERS
-var ourVar = 11;
-ourVar--;
-console.log(ourVar);
+//QUOTING STRINGS WITH SINGLE QUOTES
+var ourStr = 'I am a "double quoted" string inside "single quotes"';
+console.log(ourStr);
 
 
-//DECIMAL NUMBERS
-var ourDecimal = 5.5;
-var myDecimal = 0.009;
-console.log(myDecimal);
-console.log(ourDecimal);
+//CONCATENATING STRINGS WITH PLUS OPERATOR
+var myStr = "This is the start. " + "This is the end";
+console.log(myStr);
 
 
-//MULTIPLY DECIMALS
-var product = 0.24 * 0.009;
-console.log(product);
+//CONCATENATING STRINGS WITH PLUS EQUALS OPERATOR
+var ourStr = "I come first. ";
+ourStr += "I come second."
+console.log(ourStr)
 
 
-//DIVIDE DECIMALS
-var quotient = 4.4 / 2;
-console.log(quotient);
+//CONSTRUCTING STRINGS WITH VARIABLES
+var ourName = "freeCodeCamp";
+var ourStr = "Hello, our name is " + ourName + ", how are you?"
+
+console.log(ourStr)
 
 
-//FINDIND A REMAINDER
-var remainder = 39 % 5;
-console.log(remainder)
+//APPENDING VARIABLES TO STRINGS
+var anAdjective = "awesome!";
+var ourStr = "freeCodeCamp is ";
+ourStr += anAdjective;
+console.log(ourStr)
 
 
-//COMPOUND ASSIGNMENT WITH AUGMENTED ADDITION
-var a = 13;
-var b = 17;
-var c = 12;
+//FIND LENGTH OF STRING
+var firstLetterOfLastName = "";
+var lastName = "Lovelace";
 
-a += 5;
-b += 3;
-c += 2;
+firstLetterOfLastName = lastName[0];
 
-console.log(a)
-console.log(b)
-console.log(c)
+console.log(firstLetterOfLastName);
 
 
-//COMPOUND ASSIGNMENT WITH AUGMENTED SUBTRACTION
-var a = 13;
-var b = 17;
-var c = 12;
+//STRING IMMUTABILITY
+var myStr = "Jello World";
+myStr = "Hello World";
 
-a -= 5;
-b -= 3;
-c -= 2;
-
-console.log(a)
-console.log(b)
-console.log(c)
-
-
-//COMPOUND ASSIGNMENT WITH AUGMENTED MULTIPLICATION
-var x = 0.2;
-var y = 4.5;
-var z = 6;
-
-x *= 5;
-y *= 3;
-z *= 2;
-
-console.log(x);
-console.log(y);
-console.log(z);
-
-
-//COMPOUND ASSIGNMENT WITH AUGMENTED DIVISION
-var a = 56;
-var b = 99;
-var c = 108;
-
-a /= 7;
-b /= 11;
-c /= 4;
-console.log(a);
-console.log(b);
-console.log(c);
+console.log(myStr);
