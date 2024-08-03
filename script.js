@@ -1,56 +1,64 @@
-//DECLARING STRING VARIABLES
-var firstName = "Alan ";
-var lastName = "Turing";
+//BRACKET NOTATION TO FIND NTH CHARACTER IN STRING
+var firstName = "Dennis";
+var secondLetterOfLastName = firstName[1];
 
-console.log(firstName + lastName)
-
-
-//ESCPAING LITERAL QUOTES IN STRINGS
-var myStr = "I am a \"double quoted\" string variable inside \"double quotes\"";
-console.log(myStr);
+console.log(secondLetterOfLastName);
 
 
-//QUOTING STRINGS WITH SINGLE QUOTES
-var ourStr = 'I am a "double quoted" string inside "single quotes"';
-console.log(ourStr);
+//BRACKET NOTATION TO FIND LAST CHARACTER IN STRING
+var firstName = "Dennis";
+var lastLetterOfFirstName = firstName[firstName.length - 1];
+
+console.log(lastLetterOfFirstName )
 
 
-//CONCATENATING STRINGS WITH PLUS OPERATOR
-var myStr = "This is the start. " + "This is the end";
-console.log(myStr);
+//BRACKET NOTATION TO FIND NTH-TO-LAST CHARACTER IN STRING
+var firstName = "Dennis";
+var thirdToLastLetterOfFirstName = firstName[firstName.length - 3];
+
+console.log(thirdToLastLetterOfFirstName);
 
 
-//CONCATENATING STRINGS WITH PLUS EQUALS OPERATOR
-var ourStr = "I come first. ";
-ourStr += "I come second."
-console.log(ourStr)
+//WORD BLANKS
+function wordBlanks(myNoun, myAdjective, myVerb, myAdverb) {
+    var result = "";
+    result += "The " + myAdjective + " " + myNoun + " " + myVerb + " to the store " + myAdverb;
+
+    return result;
+}
+
+console.log(wordBlanks("dog", "big", "ran", "quickly")) 
 
 
-//CONSTRUCTING STRINGS WITH VARIABLES
-var ourName = "freeCodeCamp";
-var ourStr = "Hello, our name is " + ourName + ", how are you?"
-
-console.log(ourStr)
+//STORE MULTIPLE VALUES WITH ARRAYS
+var ourArray = ["Front", "Left", 25, 7];
+console.log(ourArray);
 
 
-//APPENDING VARIABLES TO STRINGS
-var anAdjective = "awesome!";
-var ourStr = "freeCodeCamp is ";
-ourStr += anAdjective;
-console.log(ourStr)
+//NESTED ARRAYS
+var ourArray = [["The universe", 42], ["everything", 101010]];
+console.log(ourArray);
 
 
-//FIND LENGTH OF STRING
-var firstLetterOfLastName = "";
-var lastName = "Lovelace";
-
-firstLetterOfLastName = lastName[0];
-
-console.log(firstLetterOfLastName);
+//ACCESS ARRAY DATA WITH INDEXES
+var ourArray = [50, 60, 70];
+var ourData = ourArray[1];
+console.log(ourData);
 
 
-//STRING IMMUTABILITY
-var myStr = "Jello World";
-myStr = "Hello World";
+//MODIFY ARRAY WITH INDEXES
+var ourArray = [18, 64, 99];
+ourArray[1] = 45;
+console.log(ourArray);
 
-console.log(myStr);
+//ACCESS MULTI-DIMENSIONAL ARRAYS WITH INDEXES
+var myArray = [[1, 2, 3], [4, 5, 6], [7, 8, 9], [[10, 11, 12], 13, 14]];
+myData = myArray[3][0][0];
+console.log(myData);
+
+
+//MANIPULATE ARRAYS WITH PUSH()
+var ourArray = ["stimpson", "J", "cat"];
+ourArray.push("happiness", "joy");
+console.log(ourArray);
+
